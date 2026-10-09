@@ -89,6 +89,16 @@ def build_demo():
                 out_advice = gr.Markdown()
         btn.click(fn=lambda t: predict(t, tokenizer, model), inputs=text,
                   outputs=[out_risk, out_evidence, out_advice])
+        gr.Examples(
+            examples=[
+                ["今天和朋友去吃了火锅，特别开心！明天还要早起上班，晚安~"],
+                ["最近一个月都提不起劲，失眠到凌晨三四点，对什么都没兴趣，觉得自己很没用。"],
+                ["我真的撑不下去了，不想再活了，想找个地方安静地结束这一切。"],
+                ["连续加班三周，每天都在崩溃边缘，觉得活着没什么意思，但还得咬牙坚持。"],
+            ],
+            inputs=text,
+            label="试几个示例（点击自动填入）",
+        )
     return demo
 
 
