@@ -1,0 +1,24 @@
+# 数据和模型不进 git
+data/
+qwen_model/
+*.zip
+*.whl
+
+# LoRA adapter 权重
+outputs/lora_*/
+
+# 训练日志
+outputs/*.txt
+
+# 临时脚本
+scripts/_*.py
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

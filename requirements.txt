@@ -1,0 +1,16 @@
+# ===== 核心：必须装 CUDA 版 torch（RTX 4060 Ti, CUDA 12.1）=====
+torch==2.5.1+cu121
+transformers==4.46.3
+tokenizers==0.20.4
+huggingface-hub==0.36.2
+accelerate==1.1.1
+peft==0.13.2
+datasets==3.1.0
+bitsandbytes==0.50.2
+modelscope==1.40.1
+gradio>=4.0,<7.0
+pandas>=2.0
+scikit-learn>=1.4
+openpyxl
+matplotlib
+tqdm
