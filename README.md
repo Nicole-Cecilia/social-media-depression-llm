@@ -24,7 +24,7 @@
 │   ├── verify_lora_tokenize.py
 │   ├── make_dashboard.py
 │   └── run_demo.py
-├── docs/                  # Demo 截图
+├── demo_screenshot.png    # Demo 界面截图
 └── requirements.txt
 ```
 
@@ -72,7 +72,7 @@ python -m scripts.run_demo
 
 Gradio 界面，粘贴一段文本给出：三档风险等级 + 自动摘录的关键证据句 + 心理关怀指引。
 
-![Demo 界面](docs/demo_screenshot.png)
+![Demo 界面](demo_screenshot.png)
 
 启动后浏览器打开 `http://127.0.0.1:7860`，内置 4 个预设示例可一键测试。
 
